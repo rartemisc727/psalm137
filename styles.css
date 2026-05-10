@@ -1,0 +1,282 @@
+html {
+    background: #f4f5f7;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #1c1c1c;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    line-height: 1.7;
+}
+
+/* Header */
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+
+    padding: 30px 40px;
+    background: linear-gradient(135deg, #2e4158, #1f2c3d);
+    color: white;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 32px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+}
+
+header p {
+    margin-top: 6px;
+    font-size: 14px;
+    opacity: 0.85;
+    text-align: center;
+}
+
+p {
+    text-align: center;
+}
+
+
+/* Navigation */
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 18px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    letter-spacing: 0.1em;
+    padding: 6px 10px;
+    border-radius: 8px;
+    transition: 0.25s ease;
+}
+
+nav a:hover {
+    background: rgba(255,255,255,0.15);
+}
+
+/* Section Wrapper */
+
+section {
+    max-width: 1000px;
+    margin: 60px auto;
+    padding: 0 20px;
+}
+
+/* Titles */
+
+h1, h2 {
+    text-align: center;
+    font-weight: normal;
+}
+
+h2 {
+    font-size: 28px;
+    margin-bottom: 25px;
+    color: #2e4158;
+    letter-spacing: 0.05em;
+}
+
+/* Psalm Layout */
+
+.psalm {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    align-items: start;
+}
+
+.english, .hebrew {
+    background: white;
+    padding: 30px;
+    border-radius: 14px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.06);
+    font-size: 18px;
+}
+
+.english {
+    text-align: left;
+}
+
+.hebrew {
+    text-align: right;
+    direction: rtl;
+    min-height: 750px;
+}
+
+/* Timeline */
+
+.timeline {
+    position: relative;
+    margin-left: 20px;
+    padding-left: 25px;
+    border-left: 2px solid #2e4158;
+}
+
+.event {
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.event h3 {
+    margin: 0;
+    font-size: 18px;
+    color: #2e4158;
+}
+
+.event p {
+    margin: 6px 0 0;
+    color: #444;
+    text-align: left;
+}
+
+
+/* Themes and Analysis */
+
+#main-analysis {
+    display: flex;
+    justify-content: center;
+    padding: 50px 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.analysis {
+    background: #f8f4ea;
+    border: 2px solid #d8c7a0;
+    border-radius: 18px;
+    padding: 35px;
+    max-width: 850px;
+    width: 100%;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.12);
+}
+
+.analysis h2 {
+    text-align: center;
+    font-size: 2.2em;
+    color: #2e4158;
+    margin-bottom: 25px;
+    letter-spacing: 1px;
+    border-bottom: 2px solid #c9b07a;
+    padding-bottom: 10px;
+}
+
+.analysis ul {
+    list-style: none;
+    padding: 0;
+}
+
+.analysis li {
+    background: rgba(255,255,255,0.7);
+    margin-bottom: 18px;
+    padding: 18px 22px;
+    border-left: 6 px solid #8c6239;
+    border-radius: 12px;
+    font-size: 1.08rem;
+    line-height: 1.7;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.analysis li:hover {
+    transform: translateX(6px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.anaylsis strong{
+    color: #4b2d12;
+    font-size: 1.1rem;
+}
+
+.theme-card {
+    background: white;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 14px;
+    border-top: 5px solid #2e4158;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+}
+
+.theme-card h3 {
+    color: #2e4158;
+    margin-bottom: 10px;
+}
+
+
+/* timeline dots */
+
+.event::before {
+    content: "";
+    position: absolute;
+    left: -34px;
+    top: 6px;
+    width: 10px;
+    height: 10px;
+    background: #2e4158;
+    border-radius: 50%;
+
+}
+
+/* Symbols */
+
+.symbols {
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+  
+    display: flex;
+    gap: 18px;
+    font-size: 34px;
+    opacity: 0.95;
+}
+
+.symbols2 {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+
+    display: flex;
+    gap: 18px;
+    font-size: 34px;
+    opacity: 0.95;   
+}
+
+
+.symbols span {
+    padding: 8px 10px;
+    border-radius: 10px;
+    transition: 0.2s ease;
+}
+
+.symbols2 span {
+    padding: 8px 10px;
+    border-radius: 10px;
+    transition: 0.2s ease;
+}
+
+.symbols span:hover, .symbols2 span:hover {
+    background: rgba(255, 255, 255, 0.15);
+    transform: translateY(-2px) scale(1.05);
+}
+
+
+/* Responsive */
+@media (max-width: 768px) {
+    .psalm {
+        grid-template-columns: 1fr;
+    }
+    header h1 {
+        font-size: 32px;
+    }
+}
