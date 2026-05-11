@@ -101,8 +101,10 @@ h2 {
     background: white;
     padding: 30px;
     border-radius: 14px;
+    border: 2px solid #2e4158;
     box-shadow: 0 10px 25px rgba(0,0,0,0.06);
     font-size: 18px;
+    min-height: 750px;
 }
 
 .english {
@@ -112,7 +114,6 @@ h2 {
 .hebrew {
     text-align: right;
     direction: rtl;
-    min-height: 750px;
 }
 
 /* Timeline */
